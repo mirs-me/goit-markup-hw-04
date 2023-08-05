@@ -112,8 +112,11 @@ svg {
                 padding: 188px 0;
                 background-image: linear-gradient(0, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/people-office-1.jpg');
                 background-position: center;
-                background-size: 1440px;
+                background-size: cover;
                 background-repeat: no-repeat;
+                max-width: 1440px;
+                height: 600px;
+                margin: 0 auto;
 }
 
 .hero-section-title {color: var(--white);
@@ -306,29 +309,29 @@ svg {
 .customers-list {
     list-style: none;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     gap: 24px;
 }
 .customers-list-item{
-        padding: 16px 32px;
+        width: 168px;
+        height: 88px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 4px;
         border: 1px solid var(--lightslate);
         color: var(--lightslate);
 }
-.customer-logo{ --color4: currentcolor;}
+.customer-logo{ fill: currentColor;}
 .customers-list-item:hover, .customers-list-item:focus{color: var(--ocean);
                                                         border-color: var(--ocean);}
-.values-icons-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    margin-bottom: 8px;
-}
-.values-icon-list-item{padding: 24px 100px;
+.values-list-icon{ height: 120px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
                         border-radius: 4px;
                         background-color: var(--cloud);
+                        margin-bottom: 8px;
 }
 .team-socials-list {
     list-style: none;
@@ -336,10 +339,13 @@ svg {
     justify-content: center;
     gap:24px;   
 }
-.team-socials-list-items{ padding: 12px;
+.team-socials-list-items{ width: 40px;
+                        height: 40px;
                         background-color: var(--iris);
-                        color: var(--cloud);
                         border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                     }
 .team-socials-list-items:hover, .team-socials-list-items:focus{background-color: var(--ocean);}
 .bottom-page-row{ display:flex;
@@ -357,7 +363,11 @@ svg {
 }
 
 .footer-socials-list-items {
-    padding: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--iris);
     color: var(--cloud);
     border-radius: 50%;   
